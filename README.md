@@ -42,10 +42,11 @@ Modeled after equity stock screeners (e.g. Zerodha, Groww, Bloomberg), PlaceInde
 ```
 placeindex/
 │
-├── README.md                      # Primary project overview (this file)
-├── PROJECT_REFERENCE.md           # Master reference document — core concept, architecture, tech stack & paper framework
-├── RESEARCH_PAPERS.md             # 33 curated research papers, literature survey guide & 6 novel project innovations
-└── REALTIME_DATA_SOURCES.md       # Master directory of 40+ APIs (OpenAQ, Overpass OSM, PyTrends, ISRO Bhuvan, RBI DBIE) & code
+├── README.md                                # Primary project overview (this file)
+├── SOFTWARE_REQUIREMENTS_SPECIFICATION.md   # IEEE 830 compliant Software Requirement Specification (SRS)
+├── PROJECT_REFERENCE.md                     # Master reference document — concept, architecture, tech stack & paper framework
+├── RESEARCH_PAPERS.md                       # 33 curated research papers, literature survey guide & 6 novel project innovations
+└── REALTIME_DATA_SOURCES.md                 # Master directory of 40+ APIs (OpenAQ, Overpass OSM, PyTrends, ISRO Bhuvan, RBI DBIE) & code
 ```
 
 ---
@@ -60,21 +61,14 @@ placeindex/
 
 ---
 
-## 📚 Project Reference Guides
+## 📚 Project Reference Guides & Specifications
 
-This repository contains comprehensive blueprints and technical reference documents:
+This repository contains comprehensive blueprints and technical specifications:
 
-1. 📖 **[PROJECT_REFERENCE.md](PROJECT_REFERENCE.md)** — Master technical blueprint covering product concept, 5-pillar mathematical model, 10 data categories, 5-agent AI swarm, system tech stack, and academic framework.
-2. 📚 **[RESEARCH_PAPERS.md](RESEARCH_PAPERS.md)** — Academic references featuring 33 literature sources, paper outline, target IEEE/ACM conferences, and 6 novel contributions.
-3. 🌐 **[REALTIME_DATA_SOURCES.md](REALTIME_DATA_SOURCES.md)** — Complete directory of 40+ open data APIs, government registries (MahaRERA, Ready Reckoner Rates, ISRO Bhuvan), scrapers, and python connector scripts.
-
----
-
-## 📄 Key Reference Documents
-
-1. 📖 **[PROJECT_REFERENCE.md](PROJECT_REFERENCE.md)** — Comprehensive project blueprint.
-2. 📚 **[RESEARCH_PAPERS.md](RESEARCH_PAPERS.md)** — Academic references, literature review, and research methodology.
-3. 🌐 **[REALTIME_DATA_SOURCES.md](REALTIME_DATA_SOURCES.md)** — Free APIs, scrapers, ISRO Bhuvan GIS, RBI DBIE, and python scripts.
+1. 📋 **[SOFTWARE_REQUIREMENTS_SPECIFICATION.md](SOFTWARE_REQUIREMENTS_SPECIFICATION.md)** — Formal IEEE Std 830-1998 Software Requirement Specification (SRS) with functional modules FR-1 to FR-8, non-functional requirements NFR-1 to NFR-14, DFD Level 0/1, and ER schema.
+2. 📖 **[PROJECT_REFERENCE.md](PROJECT_REFERENCE.md)** — Master technical blueprint covering product concept, 5-pillar mathematical model, 10 data categories, 5-agent AI swarm, system tech stack, and academic framework.
+3. 📚 **[RESEARCH_PAPERS.md](RESEARCH_PAPERS.md)** — Academic references featuring 33 literature sources, paper outline, target IEEE/ACM conferences, and 6 novel contributions.
+4. 🌐 **[REALTIME_DATA_SOURCES.md](REALTIME_DATA_SOURCES.md)** — Complete directory of 40+ open data APIs, government registries (MahaRERA, Ready Reckoner Rates, ISRO Bhuvan), scrapers, and python connector scripts.
 
 ---
 
