@@ -45,8 +45,7 @@ placeindex/
 ├── README.md                      # Primary project overview (this file)
 ├── PROJECT_REFERENCE.md           # Master reference document — core concept, architecture, tech stack & paper framework
 ├── RESEARCH_PAPERS.md             # 33 curated research papers, literature survey guide & 6 novel project innovations
-├── REALTIME_DATA_SOURCES.md       # Master directory of 40+ APIs (OpenAQ, Overpass OSM, PyTrends, ISRO Bhuvan, RBI DBIE) & code
-└── prototype_scoring_engine.py    # Working Python prototype implementing Z-score normalization, pillar math & city roll-up
+└── REALTIME_DATA_SOURCES.md       # Master directory of 40+ APIs (OpenAQ, Overpass OSM, PyTrends, ISRO Bhuvan, RBI DBIE) & code
 ```
 
 ---
@@ -61,46 +60,13 @@ placeindex/
 
 ---
 
-## 🚀 Running the Prototype Scoring Engine
+## 📚 Project Reference Guides
 
-Run the standalone Python prototype script to see the 5-Pillar Scoring Engine and Volume-Weighted City Roll-Up in action:
+This repository contains comprehensive blueprints and technical reference documents:
 
-### Prerequisites
-- Python 3.9 or higher
-
-### Command
-```bash
-# Clone the repository
-git clone https://github.com/SSPMCompNo5/placeindex.git
-cd placeindex
-
-# Run the scoring engine script
-python prototype_scoring_engine.py
-```
-
-### Sample Output
-```
-======================================================================
- 🏙️  PLACEINDEX — REAL ESTATE AREA INVESTMENT INDEX PROTOTYPE ENGINE
-======================================================================
-
-📍 CITY SUMMARY: MUMBAI INDEX
-   City Score: 74.8 / 100  |  Signal: HOLD
-   Total Volume: 705 transactions/mo across 6 micro-markets
-
-----------------------------------------------------------------------
-Rank  Micro-Market    Score    Signal   P1(Price)  P4(Infra)  P5(Live)  
-----------------------------------------------------------------------
-1     Powai           84.6     BUY      76.7       68.6       77.6      
-2     Bandra West     82.5     BUY      80.3       74.5       69.1      
-3     Lower Parel     66.6     HOLD     57.2       68.2       44.2      
-4     Worli           62.3     HOLD     44.8       62.7       49.0      
-5     Juhu            59.2     REVIEW   36.8       26.1       65.5      
-6     Mira Road       27.4     AVOID    0.0        21.7       2.4       
-----------------------------------------------------------------------
-
-✅ Results exported successfully to prototype_scores_output.json
-```
+1. 📖 **[PROJECT_REFERENCE.md](PROJECT_REFERENCE.md)** — Master technical blueprint covering product concept, 5-pillar mathematical model, 10 data categories, 5-agent AI swarm, system tech stack, and academic framework.
+2. 📚 **[RESEARCH_PAPERS.md](RESEARCH_PAPERS.md)** — Academic references featuring 33 literature sources, paper outline, target IEEE/ACM conferences, and 6 novel contributions.
+3. 🌐 **[REALTIME_DATA_SOURCES.md](REALTIME_DATA_SOURCES.md)** — Complete directory of 40+ open data APIs, government registries (MahaRERA, Ready Reckoner Rates, ISRO Bhuvan), scrapers, and python connector scripts.
 
 ---
 
