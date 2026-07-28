@@ -173,7 +173,7 @@ for station in results:
         print(f"  - {measurement['parameter']}: {measurement['value']} {measurement['unit']}")
 ```
 
-### 3. PyTrends Google Search Interest Fetcher
+### 3. PyTrends Google Search Demand Tracker
 
 ```python
 from pytrends.request import TrendReq
@@ -188,4 +188,62 @@ print(data.tail())
 
 ---
 
+## 🚀 11. Advanced & Secondary Data Sources (Extended List)
+
+To elevate your project from a basic prototype to an **institutional-grade AI platform**, you can incorporate these additional specialized data streams:
+
+### A. Satellite Imagery & GIS Geolocation Data
+1. **ISRO Bhuvan (NRSC Thematic Services)**:
+   - *Data*: Urban Land Use Land Cover (LULC), AMRUT urban maps (1:4,000 scale), flood hazard layers for Maharashtra.
+   - *Access*: OGC WMS/WMTS Web Services (`bhuvan-app1.nrsc.gov.in/thematic`) streamed directly into Python / QGIS.
+2. **Google Earth Engine (GEE API)**:
+   - *Data*: Sentinel-2 Normalized Difference Vegetation Index (NDVI) for green cover + VIIRS Nighttime Lights for economic growth.
+   - *Access*: Python `earthengine-api`.
+3. **MapmyIndia (Mappls API)**:
+   - *Data*: Hyper-local Indian POIs, door-step geocoding, and localized traffic flow.
+   - *Access*: REST API (`mappls.com/api`).
+
+### B. Official Government Revenue & Land Registries
+1. **Maharashtra Ready Reckoner Rates (ASR)**:
+   - *Data*: Government-mandated minimum benchmark property valuation per sq. meter across every survey number and ward in Maharashtra.
+   - *Access*: Stamp Duty & Registration Dept Portal (IGR Maharashtra).
+2. **Mahabhulekh (Maharashtra Land Records)**:
+   - *Data*: Land title ownership, 7/12 extract status, and Non-Agricultural (NA) land conversion approvals.
+   - *Access*: Public Portal (`bhulekh.mahabhumi.gov.in`).
+3. **CERSAI Mortgage Registry**:
+   - *Data*: Pincode-level volume of home loans created by banks/HFCs (measure of leverage and buyer activity).
+   - *Access*: CERSAI Public Reports (`cersai.org.in`).
+
+### C. Macroeconomic & Banking Statistics
+1. **RBI DBIE (Database on Indian Economy)**:
+   - *Data*: Monthly sectoral deployment of bank credit to housing, home loan interest rates, and CPI inflation.
+   - *Access*: RBI Statistics Portal (`dbie.rbi.org.in`) CSV downloads.
+2. **National Housing Bank (NHB RESIDEX)**:
+   - *Data*: Official Housing Price Index (HPI) @ Assessment & Market Prices across 50 cities.
+   - *Access*: NHB Portal (`residex.nhbonline.org.in`).
+
+### D. Live Traffic & Mobility Data
+1. **TomTom Traffic Index API / HERE Mobility API**:
+   - *Data*: Live traffic congestion index and average speed bottlenecks per corridor.
+   - *Access*: REST API (Freemium tier).
+2. **Uber / Meta Movement Open Mobility Datasets**:
+   - *Data*: Aggregated zone-to-zone travel times across urban centers.
+   - *Access*: Open Mobility Data Portal (`movement.uber.com`).
+
+### E. Environmental & Water Security Data
+1. **Central Ground Water Board (CGWB India)**:
+   - *Data*: Taluka-level groundwater depletion rates and water table depth.
+   - *Access*: CGWB Open Reports (`cgwb.gov.in`).
+2. **Google Air Quality API / WAQI API**:
+   - *Data*: Real-time hourly AQI, pollen, and dominant pollutant tracking ($PM_{2.5}, PM_{10}, NO_2, SO_2$).
+   - *Access*: `aqicn.org` JSON Feed.
+
+### F. Industry Research & PDF Intelligence
+1. **PropTech & Consultancy Market Reports**:
+   - *Data*: Anarock, Knight Frank India, JLL, PropTiger, MagicBricks PropIndex quarterly PDF reports.
+   - *Access*: Python `pdfplumber` / `pypdf` + LLM extraction agent to parse micro-market supply, demand, and inventory overhang.
+
+---
+
+> **Last Updated:** 2026-07-28
 > **Next Step:** Integrate these connectors into the `Data Agent` and `Research Agent` pipeline!
