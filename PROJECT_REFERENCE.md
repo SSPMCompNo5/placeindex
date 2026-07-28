@@ -38,6 +38,9 @@ The score for each area is built from **real, ground-level data** — not just p
 
 Every data point below is something the **AI agents actively search for and track** via internet access, APIs, and public databases.
 
+> [!TIP]
+> **Complete Data Directory & API Code**: See [REALTIME_DATA_SOURCES.md](file:///c:/placeindex/REALTIME_DATA_SOURCES.md) for exact open APIs (Overpass OSM, OpenAQ, CPCB, PyTrends), scraper specs, government portals, and working Python integration scripts across all 10 categories.
+
 ---
 
 #### 📚 Category 1: Education & Schools
